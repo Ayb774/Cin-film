@@ -1,0 +1,62 @@
+  // $listActeurs = [
+  //   "Brad Pitt", 
+  //   "Meryl Streep", 
+  //   "Leonardo DiCaprio", 
+  //   "Julia Roberts",  
+  //   "Tom Hanks",
+  //   "Nicole Kidman", 
+  //   "Johnny Depp", 
+  //   "Cate Blanchett", 
+  //   "Denzel Washington", 
+  //   "Angelina Jolie",
+  //   "George Clooney", 
+  //   "Charlize Theron", 
+  //   "Will Smith", 
+  //   "Jennifer Lawrence", 
+  //   "Robert Downey Jr.",
+  //   "Natalie Portman", 
+  //   "Tom Cruise", 
+  //   "Kate Winslet", 
+  //   "Matt Damon", 
+  //   "Emma Watson",
+  //   "John Melvyn"
+  // ];
+
+
+  
+
+
+  // if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+
+  //   $recherche = strtolower($_POST['acteur']); // Convertit la recherche en minuscules pour une correspondance insensible à la casse
+
+  //   if (strlen($recherche) >= 3){
+
+  //     $matches = [];
+
+  //     foreach ($listActeurs as $acteur) {
+  //         $acteurParts = explode(' ', $acteur);
+  //         $acteurPrenom = strtolower($acteurParts[0]);
+  //         $acteurNom = strtolower($acteurParts[1]);
+  //         // $acteurPrenom = strtolower(preg_match('/\S(?=\s)/', $acteur));
+  //         // $acteurNom = strtolower(preg_match('/(?<=\s)\S/', $acteur));
+          
+  //         if (strpos($acteurPrenom, $recherche) === 0 || strpos($acteurNom, $recherche) === 0) {
+  //             $matches[] = $acteur;
+  //         }
+  //     }
+
+
+  //     if (!empty($matches)) {
+  //         echo '<div class="resultats">';
+  //         foreach ($matches as $match) {
+  //             echo "<p class='resultat'>$match</p>";
+  //         }
+  //         echo '</div>';
+  //     } else {
+  //         echo '<p class="resultat">Aucun acteur dont le nom commence par cette séquence de caractères</p>';
+  //     }
+  //   }
+  //   else {
+  //     echo '<p class="resultat">Veuillez entrer au moins 3 caractères</p>';
+  //   }
